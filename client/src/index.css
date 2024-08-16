@@ -1,0 +1,114 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --primary: #dbbc65;
+  --primaryMuted: #d2bd8d;
+  --secondary: #731dd8;
+  --secondaryOnion: #ea416e;
+  --black: #1e0b24;
+  --white: #faf7f7;
+  --glow: #b9f5d0;
+  --shadow-1: rgba(0, 0, 0, 0.1);
+  --smallestFont: 1.7rem;
+  --smallFont: 2.2rem;
+  --midFont: 3rem;
+  --largeFont: 3.9rem;
+  --titleFont: 8.5rem;
+  --themeFont: "Noto Serif Display", cursive;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--primary);
+}
+*:focus {
+  outline: none;
+  outline: 0.2rem solid var(--primary);
+  outline-offset: 0.1rem;
+}
+/* *::placeholder {
+  ::placeholder {
+  }
+} */
+
+#root {
+  height: 100vh;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 100vh;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #731dd8;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+h2 {
+  font-size: var(--midFont);
+  font-family: var(--themeFont);
+}
+
+label {
+  font-size: var(--smallFont);
+}
+
+input {
+  height: 3rem;
+  width: 18rem;
+  color: var(--secondary);
+}
+
+button {
+  border-radius: 0.8rem;
+  border: none;
+  margin-top: 3rem;
+  padding: 0.6rem 1.2em;
+  font-size: var(--smallFont);
+  background-color: var(--secondary);
+  cursor: pointer;
+  transition: border-color 0.45s;
+  color: var(--black);
+}
+button:hover {
+  border-color: var(--glow);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+/* div {
+  color: #f0f2f5;
+} */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
